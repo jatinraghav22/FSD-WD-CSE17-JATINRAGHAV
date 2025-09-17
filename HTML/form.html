@@ -3,83 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>APPLICATION FORM</title>
+    <link rel="icon" href="adg.png">
 </head>
 <body>
-    <h1>APPLICATION FORM </h1>
-    <h4>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out for the Job Application Form.</h4>
-    <form action="http://localhost:3000/form" method="POST">
-
-    * Full Name:
-    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
-
-    * Email:
-    <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-    * Age:
-    <input type="number" id="age" name="age" placeholder="Age" required><br><br>
-
-    Which option best describes your current role?
-    <select name="role" id="role">
-        <option value="Student"> Student </option>
-        <option value="Worker"> Worker </option>
-    </select>
-    <br><br>
-
-    * Would you like to list references?:
-    <input type="radio" name="Branch">Yes 
-    <input type="radio" name="Branch">No
-    <br><br>
-
-    Which position would you like to apply for ?
-    <select name="role" id="role">
-        <option value="Manager"> Manager </option>
-        <option value="Assistant Manager"> Assistant Manager </option>
-    </select>
-    <br>
-    <br>
-    Which programming languages do you known?
-    <br>
-    <label for="id1">
-        <input type="checkbox" value="Java" name="Java" id="id2">
-    </label>Java
-    <br>
-
-    <label for="id2">
-        <input type="checkbox" value="Python" name="Python" id="id2">
-    </label>Python
-    <br>
-
-    <label for="id3">
-        <input type="checkbox" value="JavaScript" name="JavaScript" id="id3">
-    </label>JavaScript
-    <br>
-    
-    <label for="id4">
-        <input type="checkbox" value="C++" name="C++" id="id4">
-    </label>C++
-    <br>
-    
-    <label for="id5">
-        <input type="checkbox" value="Swift" name="Swift" id="id5">
-    </label>Swift
-    <br>
-    
-    <label for="id6">
-        <input type="checkbox" value="Ruby" name="Ruby" id="id6">
-    </label>Ruby
-    <br>
-    
-    <label for="id7">
-        <input type="checkbox" value=".Net" name=".Net" id="id7">
-    </label>.Net
-    <br>
-    
-    Any comments?
-    <textarea name="feedback" id="feedback" placeholder="Please add Feedback">
-    </textarea>
-    <br><br>
-    <button type="submit">Submit</button>
+<h1>APPLICATION FORM</h1>
+    <p>
+        Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.
+    </p>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">* Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" placeholder="Enter your full name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">* Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your Email"></td>
+            </tr>
+            <tr>
+                <td><label for="age">* Age:</label></td>
+                <td><input type="text" id="age" name="age" placeholder="Age"></td>
+            </tr>
+            <tr>
+                <td>Which option best describes your current role?</td>
+                <td>
+                    <select name="role">
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="intern">Intern</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>* Would you like to list references?</td>
+                <td>
+                    <input type="radio" id="yes" name="references" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="references" value="no">
+                    <label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Which position would you like to apply for?</td>
+                <td>
+                    <select name="position">
+                        <option value="">Select an option</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="manager">Manager</option>
+                        <option value="analyst">Analyst</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Which programming languages do you know?</td>
+                <td>
+                    <input type="checkbox" name="language" value="Java"> Java<br>
+                    <input type="checkbox" name="language" value="Python"> Python<br>
+                    <input type="checkbox" name="language" value="JavaScript"> JavaScript<br>
+                    <input type="checkbox" name="language" value="C++"> C++<br>
+                    <input type="checkbox" name="language" value="Swift"> Swift<br>
+                    <input type="checkbox" name="language" value="Ruby"> Ruby<br>
+                    <input type="checkbox" name="language" value=".NET"> .NET
+                </td>
+            </tr>
+           <tr>
+                <td>Upload Resume (optional):</td>
+                <td><input type="file" name="resume"></td>
+            </tr>
+            <tr>
+                <td>Any Comments?</td>
+                <td>
+                    <textarea name="comments" placeholder="Enter your comment here..." rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit Application">
+                </td>
+            </tr> 
+        </table>
     </form>
+
+
 </body>
 </html>
